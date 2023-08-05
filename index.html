@@ -14,20 +14,32 @@
                 <h2 class="settings-title">Настройки:</h2>
 
                 <h3 class="settings-meme-title">Мем</h3>
-                <input type="text" class="settings-meme-input">
+                <input type="text" 
+                id="settings-meme-input" 
+                class="settings-meme-input">
 
                 <h3 class="settings-text-above">Текст сверху</h3>
-                <input type="text" class="settings-text-above-input">
+                <input type="text" 
+                id="settings-text-above-input" 
+                class="settings-text-above-input">
 
                 <h3 class="settings-text-below">Текст снизу</h3>
-                <input type="text" class="settings-text-below-input">
+                <input type="text" 
+                id="settings-text-below-input" 
+                class="settings-text-below-input">
 
             </div>
             <div class="preview">
                 <h2 class="preview-title">Превью:</h2>
+                <div id="preview-output" class="preview-output"></div>
             </div>
         </div>
     </div>
+
+    <script src="js/model.js"></script>
+    <script src="js/view.js"></script>
+    <script src="js/controller.js"></script>
+    <script src="js/index.js"></script>
     
 </body>
 </html>

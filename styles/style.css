@@ -12,3 +12,34 @@ body {
     justify-content: space-between;
     margin-top: 105px;
 }
+
+.settings-title,
+.preview-title {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 61px;
+}
+
+.settings-title {
+    margin-bottom: 42px;
+}
+
+.settings-meme-title,
+.settings-text-above,
+.settings-text-below {
+    font-size: 35px;
+    margin-bottom: 13px;
+}
+
+.settings-meme-input,
+.settings-text-above-input,
+.settings-text-below-input
+ {
+    width: 393px;
+    height: 20px;
+    border-radius: 15px;
+    font-size: 25px;
+    line-height: 30px;
+    padding: 12px 0 12px 21px;
+    margin-bottom: 42px;
+}

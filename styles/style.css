@@ -1,0 +1,14 @@
+body {
+    background-color: grey;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.meme-app-inner {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 105px;
+}

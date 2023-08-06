@@ -31,7 +31,16 @@ body {
     margin-bottom: 13px;
 }
 
-.settings-meme-input,
+.settings-meme-select {
+    width: 415px;
+    border-radius: 15px;
+    font-size: 25px;
+    line-height: 30px;
+    padding: 12px 0 12px 21px;
+    margin-bottom: 42px;
+}
+
+
 .settings-text-above-input,
 .settings-text-below-input
  {

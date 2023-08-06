@@ -14,9 +14,10 @@
                 <h2 class="settings-title">Настройки:</h2>
 
                 <h3 class="settings-meme-title">Мем</h3>
-                <input type="text" 
-                id="settings-meme-input" 
-                class="settings-meme-input">
+                <select id="settings-meme-select" class="settings-meme-select">
+                    <option hidden disabled selected value="Категория">Memes</option>
+                    <option value="Memes">Memes</option>
+                </select>
 
                 <h3 class="settings-text-above">Текст сверху</h3>
                 <input type="text" 
@@ -36,6 +37,7 @@
         </div>
     </div>
 
+    <script src="js/api.js"></script>
     <script src="js/model.js"></script>
     <script src="js/view.js"></script>
     <script src="js/controller.js"></script>

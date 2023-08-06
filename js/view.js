@@ -1,5 +1,5 @@
 class View {
-    constructor({ textAbove }) {
+    constructor(textAbove) {
         this.memeSelectNode = document.getElementById('settings-meme-select');
         this.aboveInputNode = document.getElementById('settings-text-above-input');
         this.belowInputNode = document.getElementById('settings-text-below-input');
@@ -7,13 +7,22 @@ class View {
 
         this.textAbove = textAbove;
     }
+
+    // renderAboveInputText = () => {
+    //     this.aboveInputNode.oninput = function () {
+    //         outputNode.innerText = this.value
+    //     }  
+    // }
+
+    
 }
 
-renderAboveInputText = () => {
-    this.aboveInputNode.innerHTML = '';
+const aboveInputNode = document.getElementById('settings-text-above-input');
+const outputNode = document.getElementById('preview-output');
 
-    this.aboveInputNode.innerHTML += `
-    <div class="preview-output">
-        <p>${this.aboveInputNode.value}</p>
-    </div>`
+aboveInputNode.oninput = function () {
+    outputNode.innerText = this.value;
 }
+
+
+

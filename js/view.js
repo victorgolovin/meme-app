@@ -1,28 +1,31 @@
 class View {
-    constructor(textAbove) {
+    constructor() {
         this.memeSelectNode = document.getElementById('settings-meme-select');
         this.aboveInputNode = document.getElementById('settings-text-above-input');
         this.belowInputNode = document.getElementById('settings-text-below-input');
-        this.outputNode = document.getElementById('preview-output');
+        this.outpuAbovetNode = document.getElementById('preview-output-above');
+        this.outpuBelowtNode = document.getElementById('preview-output-below');
 
-        this.textAbove = textAbove;
+
+        this.aboveInputNode.addEventListener('input', this.renderAboveInput);
+        this.belowInputNode.addEventListener('input', this.renderBelowInput );
     }
 
-    // renderAboveInputText = () => {
-    //     this.aboveInputNode.oninput = function () {
-    //         outputNode.innerText = this.value
-    //     }  
-    // }
+    renderAboveInput = () => {
+        this.outpuAbovetNode.textContent = this.aboveInputNode.value;
+    }
 
-    
+    renderBelowInput = () => {
+        this.outpuBelowtNode.textContent = this.belowInputNode.value;
+    }
 }
 
-const aboveInputNode = document.getElementById('settings-text-above-input');
-const outputNode = document.getElementById('preview-output');
+// const aboveInputNode = document.getElementById('settings-text-above-input');
+// const outputNode = document.getElementById('preview-output');
 
-aboveInputNode.oninput = function () {
-    outputNode.innerText = this.value;
-}
+// aboveInputNode.oninput = function () {
+//     outputNode.innerText = this.value;
+// }
 
 
 

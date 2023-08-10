@@ -5,7 +5,7 @@ class Controller {
         });
 
         this.view = new View({
-            textAbove: this.handleModelChange
+ 
         });
 
         this.api = new Api({
@@ -13,9 +13,7 @@ class Controller {
         });
     }
 
-    handleModelChange = (textAbove) => {
-        this.view.renderAboveInputText(textAbove);
-    }
+
 }
 
 
